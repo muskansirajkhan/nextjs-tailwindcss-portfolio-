@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ @layer base {
+  body{
+    color: #fff;
+    background-color: #000;
+  }
+ }
+
+ @layer components {
+  /* .menulink class ke liye hover effect */
+  .menulink {
+    @apply cursor-pointer hover:text-[#c5c5c5];  /* Tailwind CSS classes */
+  }
+
+ 
+  .tags {
+    background-color: #0abde3;  /* Background color for tags */
+    margin-right: 0.5rem;        /* Right margin */
+    margin-top: 0.5rem;          /* Top margin */
+    padding: 3px 10px;           /* Padding */
+    display: inline-block;       /* Display tags inline */
+    color: #fff;                 /* Text color */
+    font-size: 12px;             /* Font size */
+    border-radius: 12px;         /* Rounded corners */
+  }
+  .tags:last-child{
+    margin-right: 0;
+  }
+
+  .tags:nth-child(2){
+    background-color: #a55eea;
+  
+  }
+
+  .tags:nth-child(3){
+    background-color: #5e0623;
+  
+  }
+
+  .tags:nth-child(4){
+    background-color: rgb(129, 127, 8);
+  
+  }
+}
+
